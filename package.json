@@ -2,7 +2,7 @@
   "name": "@rb/resize-observer",
   "version": "0.0.1",
   "description": "ResizeObserver component for React",
-  "main": "index.js",
+  "main": "lib/index.js",
   "files": ["lib", "README.md"],
   "scripts": {
     "dev": "webpack-dev-server",
