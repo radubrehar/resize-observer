@@ -27,21 +27,24 @@ $ yarn add @rb/resize-observer
 This component can be nested inside any parent component, and will notify when the node of the parent component changes its size.
 
 ```jsx
-import React from 'react'
-import { render } from 'react-dom'
+import React from 'react';
+import { render } from 'react-dom';
 
-import ResizeObserver from '@rb/resize-observer'
+import ResizeObserver from '@rb/resize-observer';
 
 const App = () => {
-  return <div style={{ width: '50vw' }}>
-    <ResizeObserver onResize={({ width, height }) => {
-      console.log({ width, height })
-    }}>
-  </div>
-}
+  return (
+    <div style={{ width: '50vw' }}>
+      <ResizeObserver
+        onResize={({ width, height }) => {
+          console.log({ width, height });
+        }}
+      />
+    </div>
+  );
+};
 
-
-render(<App/>, document.getElementById('root'))
+render(<App />, document.getElementById('root'));
 ```
 
 ## Props
