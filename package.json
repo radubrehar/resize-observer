@@ -1,6 +1,6 @@
 {
   "name": "@rb/resize-observer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ResizeObserver component for React",
   "publishConfig": {
     "access": "public"
@@ -14,7 +14,9 @@
     "ui"
   ],
   "main": "lib/index.js",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "rimraf lib && babel --out-dir lib src",
