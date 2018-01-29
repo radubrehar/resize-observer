@@ -34,6 +34,11 @@ class ReactResizeObserver extends React.Component {
     this.observer = observer;
   }
 
+  shouldComponentUpdate() {
+    return false; // since we never need to re-render the current resize-observer component
+    // as it only attaches a window.ResizeObserver to the parent node
+  }
+
   componentWillUnmount() {
     if (this.observer) {
       this.observer.unobserve(this.target);
