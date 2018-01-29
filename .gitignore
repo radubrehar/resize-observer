@@ -59,3 +59,4 @@ typings/
 
 .history
 .package-lock.json
+yarn.lock
