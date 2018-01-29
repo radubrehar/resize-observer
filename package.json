@@ -1,6 +1,6 @@
 {
   "name": "@rb/resize-observer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ResizeObserver component for React",
   "publishConfig": {
     "access": "public"
