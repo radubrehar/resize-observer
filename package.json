@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "ResizeObserver component for React",
   "main": "lib/index.js",
-  "files": ["lib", "README.md"],
+  "files": ["lib"],
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "rimraf lib && babel --out-dir lib src",
