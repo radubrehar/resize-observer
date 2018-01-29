@@ -34,7 +34,9 @@ import ResizeObserver from '@rb/resize-observer';
 
 const App = () => {
   return (
-    <div style={{ width: '50vw' }}>
+    <div style={{ width: '50vw', border: '1px solid red' }}>
+      This element has width: 50vw, so resize the browser window to get
+      notifications in the console
       <ResizeObserver
         onResize={({ width, height }) => {
           console.log({ width, height });
