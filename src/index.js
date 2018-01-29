@@ -35,13 +35,14 @@ class ReactResizeObserver extends React.Component {
   }
 
   componentWillUnmount() {
-    delete this.target;
     if (this.observer) {
-      this.observer.unobserve(target);
+      this.observer.unobserve(this.target);
       if (this.observer.disconnect) {
         this.observer.disconnect();
       }
     }
+
+    delete this.target;
   }
 
   render() {
