@@ -10,7 +10,7 @@ The change in size can have any source - layout changes, DOM changes, browser re
 
 The [`ResizeObserver`](https://developers.google.com/web/updates/2016/10/resizeobserver) API is a performant way of getting updates on size changes.
 
-> ## Warning! Only works in browsers that natively support `ResizeObserver` - which, in January 2018 is just Chrome >= 64
+> ## Warning! Only works if the global `ResizeObserver` is available. (As of January 2018 only Chrome >= 64 ships it natively.) You could use a [polyfill](https://github.com/que-etc/resize-observer-polyfill) to ensure it's available.
 
 ## Install
 
@@ -52,6 +52,7 @@ render(<App />, document.getElementById('root'));
 ## Props
 
 * `onResize: (contentRect)` - you can specify an `onResize` function prop, which will be called with the `contentRect` passed by the native `ResizeObserver` API. You can destructure this to `{width, height}`
-  ## License
+
+## License
 
 #### `MIT`
